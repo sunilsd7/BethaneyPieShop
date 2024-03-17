@@ -1,0 +1,40 @@
+﻿@model webapplication2.ViewModels.AddPieViewModels
+<div class="wrapper">
+    <form method="post">
+        <div class="mb-3">
+            <label for="recipient-name" class="col-form-label">Product Name</label>
+            <input type="text" class="form-control" id="recipient-name" placeholder="Product Name" asp-for="Name" value="">
+        </div>
+        <div class="mb-3">
+            <label for="recipient-name" class="col-form-label">Product Price</label>
+            <input type="number" class="form-control" id="recipient-name" placeholder="Product Price" asp-for='Price' min='1'>
+        </div>
+        <div class="mb-3">
+            <label for="recipient-name" class="col-form-label">Long Description</label>
+            <input type="text" class="form-control" id="recipient-name" placeholder="Product description" asp-for="LongDescription">
+        </div>
+        <div class="mb-3">
+            <label for="recipient-name" class="col-form-label">Short Description</label>
+            <input type="text" class="form-control" id="recipient-name" placeholder="Product description" asp-for="ShortDescription">
+        </div>
+        <div class="mb-3">
+            <label for="recipient-name" class="col-form-label"> ImageUrl</label>
+            <input type="text" class="form-control" id="recipient-name" placeholder="ImageUrl" asp-for="ImageUrl">
+        </div>
+        <div class="mb-3">
+            <label for="recipient-name" class="col-form-label"> ImageThumbnailUrl</label>
+            <input type="text" class="form-control" id="recipient-name" placeholder="ImageThumbnailUrl" asp-for="ImageThumbnailUrl">
+        </div>
+
+        
+        <div class="mb-3">
+            <label for="recipient-name" class="col-form-label">Category Name</label>
+            <input type="text" class="form-control" id="recipient-name" placeholder="Category" asp-for="Category.CategoryName">
+        </div>
+
+        <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="submit" class="btn btn-primary">Add Pie</button>
+        </div>
+    </form>
+</div>
